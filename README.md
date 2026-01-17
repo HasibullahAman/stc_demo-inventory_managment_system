@@ -1,4 +1,5 @@
-# Shahir Trading Company  
+# Shahir Trading Company
+
 ## Inventory Management System
 
 A modern inventory management system developed for **Shahir Trading Company**, built to manage products, stock, and business data efficiently using a full-stack architecture.
@@ -42,11 +43,8 @@ src/
 
 └─ styles/ # Global styles
 
-
-
 ---
 
 ## Installation
 
 ### Clone the repository
-
