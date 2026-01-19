@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bubbler_One, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+
+const bubbler = Bubbler_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bubbler",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bubbler.variable} ${jetbrains.variable} antialiased`}
       >
         {children}
       </body>
